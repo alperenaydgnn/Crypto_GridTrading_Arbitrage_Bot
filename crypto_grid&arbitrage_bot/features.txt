@@ -1,0 +1,59 @@
+Project Features:
+
+1. Arbitrage Strategies:
+   - Grid Trading:
+     Executes buy and sell orders at predefined price levels to generate profit.
+     Implemented in `grid_trading.py`.
+   - Statistical Arbitrage:
+     Analyzes price differences between two trading pairs and executes trades based on thresholds.
+     Implemented in `statistical_arbitrage.py`.
+
+2. WebSocket Listeners:
+   - Binance WebSocket:
+     Fetches real-time price data from Binance.
+     Implemented in `binance_websocket.py`.
+   - KuCoin WebSocket:
+     Fetches real-time price data from KuCoin.
+     Implemented in `kucoin_websocket.py`.
+
+3. Dashboard (Web Interface):
+   - Built with FastAPI to display real-time trade history and opportunities.
+   - Uses WebSocket for live updates.
+   - Implemented in `dashboard.py`.
+
+4. Machine Learning Models:
+   - RandomForestRegressor:
+     Used for price prediction.
+     Implemented in `ml_model.py` and `lstm_model.py`.
+   - Technical Indicators:
+     Calculates RSI, MACD, Bollinger Bands, and other indicators for analysis.
+
+5. Balance Management:
+   - Fetches and displays positive balances from Binance and KuCoin accounts.
+   - Implemented in `bakiye.py`.
+
+6. Logging and Error Handling:
+   - Logs errors and events in `binance_websocket.log` and `kucoin_websocket.log`.
+   - Automatically restarts tasks in case of errors.
+
+7. Test Modules:
+   - Includes test scripts for Binance and KuCoin WebSocket connections.
+   - Implemented in `test_websocket.py` and `test_kucoin_websocket.py`.
+
+8. Environment Variables:
+   - API keys and sensitive information are stored in a `.env` file for security.
+   - The `.env` file is excluded from version control using `.gitignore`.
+
+9. Dynamic Risk Management:
+   - Calculates trade size and risk percentage dynamically based on market conditions.
+
+10. Trade Execution:
+    - Simulates or executes real trades based on the TEST_MODE flag.
+    - Includes stop-loss and take-profit mechanisms.
+
+11. Log Trades:
+    - Saves executed trades to a CSV file for future analysis.
+
+12. Triangular Arbitrage Analyzer:
+    - Detects triangular arbitrage opportunities within the same exchange.
+    - Uses technical indicators like RSI and MACD for confirmation.

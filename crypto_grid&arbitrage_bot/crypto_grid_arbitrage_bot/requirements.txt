@@ -1,0 +1,14 @@
+python-binance
+pandas
+numpy
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
